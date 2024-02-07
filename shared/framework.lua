@@ -77,6 +77,7 @@ function SetPlayerStressMetaData(increment)
             newStressValue = 0
         end
         TriggerServerEvent("QBCore:Server:SetMetaData", "stress", newStressValue) 
+        TriggerEvent('wais:addmissionxp:yoga', 1) --added by pamela for wais battlepass
     end
 end
 
